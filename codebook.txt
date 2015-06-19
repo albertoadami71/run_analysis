@@ -1,0 +1,92 @@
+The tidy data in this project was created to organize and summarize a set of measures 
+obtained and explained in: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. 
+This site contains information about the variables and its units.
+
+In the original data file we find several measures and features (561) about 30 subjects in 6 activities.
+
+Our data summarize the information by subject identifier and activity name, calculating the average of aggregated values.
+
+For example, if original data set has 4 (four) "tBodyAcc-mean()-Y" measures for subject 10 in WALKING activity (number 1 in the original data set):
+
+		subject		activity	 tBodyAcc-mean()-Y
+		10		1		0.1010
+		10		1		0.0202	
+		10		1		0.0101
+		10		1		0.2020
+
+then, we construct a row specifying subject, activity (by name) and the average (avg) of the 4 (four) measures:
+		
+		subject		  activity	avg-tBodyAcc-mean()-Y
+		10		WALKING		0.0833
+
+
+In this way, since project requires only the measurements on the mean and standard deviation (std), the column variables and names in the table we create are:
+
+"1" "subject"
+"2" "activity"
+"3" "avg-tBodyAcc-mean()-X"
+"4" "avg-tBodyAcc-mean()-Y"
+"5" "avg-tBodyAcc-mean()-Z"
+"6" "avg-tBodyAcc-std()-X"
+"7" "avg-tBodyAcc-std()-Y"
+"8" "avg-tBodyAcc-std()-Z"
+"9" "avg-tGravityAcc-mean()-X"
+"10" "avg-tGravityAcc-mean()-Y"
+"11" "avg-tGravityAcc-mean()-Z"
+"12" "avg-tGravityAcc-std()-X"
+"13" "avg-tGravityAcc-std()-Y"
+"14" "avg-tGravityAcc-std()-Z"
+"15" "avg-tBodyAccJerk-mean()-X"
+"16" "avg-tBodyAccJerk-mean()-Y"
+"17" "avg-tBodyAccJerk-mean()-Z"
+"18" "avg-tBodyAccJerk-std()-X"
+"19" "avg-tBodyAccJerk-std()-Y"
+"20" "avg-tBodyAccJerk-std()-Z"
+"21" "avg-tBodyGyro-mean()-X"
+"22" "avg-tBodyGyro-mean()-Y"
+"23" "avg-tBodyGyro-mean()-Z"
+"24" "avg-tBodyGyro-std()-X"
+"25" "avg-tBodyGyro-std()-Y"
+"26" "avg-tBodyGyro-std()-Z"
+"27" "avg-tBodyGyroJerk-mean()-X"
+"28" "avg-tBodyGyroJerk-mean()-Y"
+"29" "avg-tBodyGyroJerk-mean()-Z"
+"30" "avg-tBodyGyroJerk-std()-X"
+"31" "avg-tBodyGyroJerk-std()-Y"
+"32" "avg-tBodyGyroJerk-std()-Z"
+"33" "avg-tBodyAccMag-mean()"
+"34" "avg-tBodyAccMag-std()"
+"35" "avg-tGravityAccMag-mean()"
+"36" "avg-tGravityAccMag-std()"
+"37" "avg-tBodyAccJerkMag-mean()"
+"38" "avg-tBodyAccJerkMag-std()"
+"39" "avg-tBodyGyroMag-mean()"
+"40" "avg-tBodyGyroMag-std()"
+"41" "avg-tBodyGyroJerkMag-mean()"
+"42" "avg-tBodyGyroJerkMag-std()"
+"43" "avg-fBodyAcc-mean()-X"
+"44" "avg-fBodyAcc-mean()-Y"
+"45" "avg-fBodyAcc-mean()-Z"
+"46" "avg-fBodyAcc-std()-X"
+"47" "avg-fBodyAcc-std()-Y"
+"48" "avg-fBodyAcc-std()-Z"
+"49" "avg-fBodyAccJerk-mean()-X"
+"50" "avg-fBodyAccJerk-mean()-Y"
+"51" "avg-fBodyAccJerk-mean()-Z"
+"52" "avg-fBodyAccJerk-std()-X"
+"53" "avg-fBodyAccJerk-std()-Y"
+"54" "avg-fBodyAccJerk-std()-Z"
+"55" "avg-fBodyGyro-mean()-X"
+"56" "avg-fBodyGyro-mean()-Y"
+"57" "avg-fBodyGyro-mean()-Z"
+"58" "avg-fBodyGyro-std()-X"
+"59" "avg-fBodyGyro-std()-Y"
+"60" "avg-fBodyGyro-std()-Z"
+"61" "avg-fBodyAccMag-mean()"
+"62" "avg-fBodyAccMag-std()"
+"63" "avg-fBodyBodyAccJerkMag-mean()"
+"64" "avg-fBodyBodyAccJerkMag-std()"
+"65" "avg-fBodyBodyGyroMag-mean()"
+"66" "avg-fBodyBodyGyroMag-std()"
+"67" "avg-fBodyBodyGyroJerkMag-mean()"
+"68" "avg-fBodyBodyGyroJerkMag-std()"
